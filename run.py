@@ -15,7 +15,7 @@ if __name__ == "__main__":
         print_devider()
         print(board)
 
-        # Human
+        # Human move
         if board.turn == 1:
             while True:
                 try:
@@ -26,7 +26,7 @@ if __name__ == "__main__":
                 except ValueError as e:
                     print(e)
 
-        # Computer
+        # Computer move
         else:
             (x, y), score = find_best_move(board, 6)
             board.place_tick_tack(x, y)
