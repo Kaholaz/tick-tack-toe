@@ -4,6 +4,7 @@ from board import Board
 def find_best_move(board: Board, depth=-1) -> tuple[tuple[int, int], int]:
     """
     Finds the best move by an exaustive depth-first reccursive search
+    Depth determines how far you want to search for a move. A negative depth indicates infinite depth.
     """
     # If there is a winner, the previous mover won (this gives a score of -1)
     if board.check_winner():

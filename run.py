@@ -28,7 +28,7 @@ if __name__ == "__main__":
 
         # Computer move
         else:
-            (x, y), score = find_best_move(board, 6)
+            (x, y), score = find_best_move(board, -1)
             board.place_tick_tack(x, y)
             if score == 1:
                 print("The computer is winning!")
